@@ -27,6 +27,10 @@ end
 
 def valid_phone_number?(phone)
 
-phone.match(/(\d+)-(\d+)-(\d+)/) 
+if phone.match(/(\d+)-(\d+)-(\d+)/) == nil
+  false
+else
+  true
+end 
 
 end
